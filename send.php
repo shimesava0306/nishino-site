@@ -22,7 +22,7 @@ function render_error(string $message, int $status = 400): void
     echo '<!doctype html><html lang="ja"><head><meta charset="utf-8">';
     echo '<meta name="viewport" content="width=device-width,initial-scale=1">';
     echo '<title>送信エラー | 株式会社西野工業</title>';
-    echo '<link rel="stylesheet" href="styles.css?v=20260730-11">';
+    echo '<link rel="stylesheet" href="styles.css?v=20260730-13">';
     echo '<link rel="stylesheet" href="legal.css?v=20260730-1">';
     echo '</head><body class="legal-page"><main class="status-page">';
     echo '<div class="status-card"><p class="eyebrow">ERROR</p><h1>送信できませんでした</h1>';

@@ -44,4 +44,5 @@
   .service-list-heading>p:last-child,
   .service-detail-copy>p:not(.service-detail-kicker),
   .service-message-inner>p:not(.eyebrow){font-size:13px;line-height:1.95;text-wrap:balance;line-break:strict}
+  .service-detail-copy li{font-size:12px;line-height:1.6}
 }

@@ -44,4 +44,6 @@
   }
   .works-copy-tail{display:block;white-space:nowrap}
   .works-section-heading>p:last-child{font-size:13px;line-height:1.9}
+  .works-card-copy p,
+  .works-card-copy small{font-size:12px;line-height:1.6}
 }

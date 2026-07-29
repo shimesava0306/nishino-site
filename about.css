@@ -59,8 +59,8 @@
 .company-map>.section-number{left:4%;top:20px}
 .map-grid{max-width:1220px;margin:60px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
 .map-card{background:#fff;border:1px solid rgba(202,149,34,.42)}
-.map-frame{height:340px;overflow:hidden;filter:grayscale(1) contrast(1.05)}
-.map-frame iframe{display:block;width:100%;height:100%;border:0}
+.map-frame{height:340px;overflow:hidden;filter:none!important;mix-blend-mode:normal}
+.map-frame iframe{display:block;width:100%;height:100%;border:0;filter:none!important;mix-blend-mode:normal;color-scheme:light;background:#fff}
 .map-card-copy{position:relative;padding:26px 30px 30px}
 .map-label{font:10px var(--mono);letter-spacing:.18em;color:var(--gold);margin:0 0 8px}
 .map-card h3{font-family:var(--serif);font-size:25px;letter-spacing:.12em;margin:0 0 13px}
@@ -136,5 +136,9 @@
   .about-page-hero-copy{font-size:12px;line-height:1.95}
   .philosophy-copy p,
   .president-text p{font-size:13px;line-height:2}
+  .president-break{display:none}
+  .company-table dt,
+  .company-table dd,
+  .company-table dd small,
   .map-card address{font-size:12px;line-height:1.9}
 }

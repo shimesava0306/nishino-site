@@ -236,13 +236,15 @@ body{animation:site-soft-in 1.15s ease both}
 
 /* Mobile body-copy readability */
 @media (max-width:760px){
-  .hero-lead{font-size:11px;line-height:1.82;text-wrap:pretty;line-break:strict}
+  .hero-lead{font-size:12px;line-height:1.82;text-wrap:pretty;line-break:strict}
   .hero-lead br,
   .about-copy>p:last-of-type br{display:none}
   .about-copy>p:last-of-type{text-wrap:pretty;line-break:strict}
   .about-copy>p:last-of-type,
   .service-card p,
   .panel-copy>p:not(.eyebrow){font-size:13px;line-height:1.9}
-  .contact-copy>p.contact-lead{font-size:clamp(9.5px,2.7vw,10.5px);line-height:1.9}
-  .contact-copy>p.contact-sales-warning{font-size:10px;line-height:1.7}
+  .contact-copy>p.contact-lead{font-size:12px;line-height:1.9;letter-spacing:0;line-break:strict}
+  .contact-copy>p.contact-lead span{white-space:normal;text-wrap:balance}
+  .contact-copy>p.contact-sales-warning{font-size:12px;line-height:1.7;letter-spacing:0;text-wrap:balance;line-break:strict}
+  .contact-heading-tail{display:block}
 }

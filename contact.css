@@ -105,5 +105,10 @@
   .contact-hero-copy{font-size:12px;line-height:1.95}
   .contact-section-heading>p:last-child,
   .contact-entry-copy>p:not(.eyebrow){font-size:13px;line-height:1.9}
-  .contact-sales-note{font-size:10px;line-height:1.9}
+  .contact-entry-copy dt,
+  .contact-entry-copy dd,
+  .contact-method-card small,
+  .contact-sales-note,
+  .contact-form-agree,
+  .contact-form-note{font-size:12px;line-height:1.7}
 }

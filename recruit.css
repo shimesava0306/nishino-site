@@ -162,4 +162,9 @@
   .recruit-point-copy>p:last-child,
   .recruit-contact-copy>p:not(.eyebrow){font-size:13px;line-height:1.95}
   .requirements-table dd{font-size:13px;line-height:1.9}
+  .requirements-table dt,
+  .requirements-table dd small,
+  .recruit-contact-direct small,
+  .form-agree,
+  .form-note{font-size:12px;line-height:1.7}
 }
