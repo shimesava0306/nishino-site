@@ -22,13 +22,49 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      const delay = Number(entry.target.dataset.revealDelay ?? 0);
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (typeof entry.target.animate === 'function') {
+        const keyframes = reduceMotion
+          ? [{ opacity: 0 }, { opacity: 1 }]
+          : [
+              { opacity: 0, transform: 'translate3d(0, 32px, 0) scale(.985)', filter: 'blur(6px)' },
+              { opacity: 1, transform: 'translate3d(0, 0, 0) scale(1)', filter: 'blur(0)' },
+            ];
+
+        entry.target.animate(keyframes, {
+          duration: reduceMotion ? 900 : 1250,
+          delay,
+          easing: 'cubic-bezier(.22, 1, .36, 1)',
+          fill: 'both',
+        });
+      }
+
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+const revealElements = document.querySelectorAll('.reveal');
+
+revealElements.forEach((element) => {
+  const revealSiblings = Array.from(element.parentElement?.children ?? [])
+    .filter((sibling) => sibling.classList.contains('reveal'));
+  const siblingIndex = revealSiblings.indexOf(element);
+  const delay = Math.min(Math.max(siblingIndex, 0), 5) * 90;
+
+  element.style.setProperty('--reveal-delay', `${delay}ms`);
+  element.dataset.revealDelay = String(delay);
+});
+
+// Paint the hidden state first so elements already in the viewport also animate.
+window.requestAnimationFrame(() => {
+  window.requestAnimationFrame(() => {
+    revealElements.forEach((element) => observer.observe(element));
+  });
+});
 
 const scrollProgress = document.querySelector('.scroll-progress span');
 let isScrollTicking = false;
