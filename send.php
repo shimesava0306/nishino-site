@@ -4,7 +4,7 @@ declare(strict_types=1);
 mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 
-const RECIPIENT_EMAIL = 'kyo19910402@icloud.com';
+const RECIPIENT_EMAIL = 'kunygtr0306@gmail.com';
 
 function redirect_to(string $location): void
 {
