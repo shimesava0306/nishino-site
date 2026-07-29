@@ -189,11 +189,20 @@ body{animation:site-soft-in 1.15s ease both}
 }
 .reveal.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1);filter:blur(0)}
 
+/* Keep the TOP contact copy aligned without awkward line breaks. */
+.contact-copy>p.contact-lead{max-width:760px}
+.contact-copy>p.contact-lead span{display:block;white-space:nowrap}
+
 @media (max-width:760px){
   .reveal{
     transform:translate3d(0,24px,0) scale(.99);
     filter:blur(4px);
     transition-duration:1s;
+  }
+  .contact-copy>p.contact-lead{
+    font-size:clamp(8.5px,2.55vw,10px);
+    line-height:1.85;
+    letter-spacing:0;
   }
 }
 
