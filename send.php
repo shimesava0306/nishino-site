@@ -6,7 +6,7 @@ mb_internal_encoding('UTF-8');
 date_default_timezone_set('Asia/Tokyo');
 
 // Notification destination and server-side sender have separate roles.
-const RECIPIENT_EMAIL = 'kunygtr0306@gmail.com';
+const RECIPIENT_EMAIL = 'kyo19910402@icloud.com';
 const SENDER_EMAIL = 'noreply@xs417903.xsrv.jp';
 
 function redirect_to(string $location): void
@@ -22,8 +22,8 @@ function render_error(string $message, int $status = 400): void
     echo '<!doctype html><html lang="ja"><head><meta charset="utf-8">';
     echo '<meta name="viewport" content="width=device-width,initial-scale=1">';
     echo '<title>送信エラー | 株式会社西野工業</title>';
-    echo '<link rel="stylesheet" href="styles.css?v=20260730-9">';
-    echo '<link rel="stylesheet" href="legal.css">';
+    echo '<link rel="stylesheet" href="styles.css?v=20260730-11">';
+    echo '<link rel="stylesheet" href="legal.css?v=20260730-1">';
     echo '</head><body class="legal-page"><main class="status-page">';
     echo '<div class="status-card"><p class="eyebrow">ERROR</p><h1>送信できませんでした</h1>';
     echo '<p>' . $safeMessage . '</p><a class="button button-gold" href="javascript:history.back()">入力画面へ戻る</a>';

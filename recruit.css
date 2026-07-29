@@ -154,3 +154,12 @@
   .form-agree{margin-bottom:12px}
   .recruit-submit{height:44px}
 }
+
+/* Mobile body-copy readability */
+@media (max-width:760px){
+  .recruit-hero-copy{font-size:12px;line-height:1.95}
+  .recruit-message-copy>p:not(.eyebrow),
+  .recruit-point-copy>p:last-child,
+  .recruit-contact-copy>p:not(.eyebrow){font-size:13px;line-height:1.95}
+  .requirements-table dd{font-size:13px;line-height:1.9}
+}

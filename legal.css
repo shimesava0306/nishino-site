@@ -34,3 +34,11 @@
   .status-card{padding:42px 20px}
   .status-card>p:not(.eyebrow){font-size:12px}
 }
+
+/* Mobile body-copy readability */
+@media (max-width:760px){
+  .legal-heading>p:last-child{font-size:13px;line-height:1.9}
+  .legal-section p,
+  .legal-section li{font-size:13px;line-height:1.95}
+  .status-card>p:not(.eyebrow){font-size:13px;line-height:1.9}
+}

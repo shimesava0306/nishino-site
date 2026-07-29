@@ -35,3 +35,13 @@
   .service-message-inner>p:not(.eyebrow){text-wrap:balance}
 }
 .service-message-photo{background-image:url('assets/about-wk.webp')}
+
+/* Mobile body-copy readability */
+@media (max-width:760px){
+  .service-hero-copy{font-size:12px;line-height:1.95;text-wrap:balance;line-break:strict}
+  .service-hero-copy br,
+  .service-message-inner>p:not(.eyebrow) br{display:none}
+  .service-list-heading>p:last-child,
+  .service-detail-copy>p:not(.service-detail-kicker),
+  .service-message-inner>p:not(.eyebrow){font-size:13px;line-height:1.95;text-wrap:balance;line-break:strict}
+}

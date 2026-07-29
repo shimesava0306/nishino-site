@@ -130,3 +130,11 @@
   .map-card address{font-size:11px}
   .map-card-copy>a{position:static;display:inline-block;margin-top:18px;font-size:9px}
 }
+
+/* Mobile body-copy readability */
+@media (max-width:760px){
+  .about-page-hero-copy{font-size:12px;line-height:1.95}
+  .philosophy-copy p,
+  .president-text p{font-size:13px;line-height:2}
+  .map-card address{font-size:12px;line-height:1.9}
+}

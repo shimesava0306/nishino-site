@@ -27,3 +27,21 @@
 
 @media (max-width:760px){.works-card-image{height:auto;aspect-ratio:4 / 3}}
 .works-cta-image{background-image:url('assets/worker.webp')}
+
+/* Mobile body-copy readability */
+@media (max-width:760px){
+  .works-page-hero-lead{
+    letter-spacing:.06em;
+    text-wrap:balance;
+    line-break:strict;
+  }
+  .works-page-hero-lead br{display:none}
+  .works-page-hero-copy{
+    font-size:12px;
+    line-height:1.95;
+    text-wrap:balance;
+    line-break:strict;
+  }
+  .works-copy-tail{display:block;white-space:nowrap}
+  .works-section-heading>p:last-child{font-size:13px;line-height:1.9}
+}
