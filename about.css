@@ -2,7 +2,7 @@
 .about-page .is-current{color:var(--gold)}
 
 .about-page-hero{height:620px;position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center}
-.about-page-hero-image{position:absolute;inset:0;background:url('assets/worker.png') 68% center/cover no-repeat;filter:grayscale(1) contrast(1.08);z-index:-3}
+.about-page-hero-image{position:absolute;inset:0;background:url('assets/about-hero.png') 68% center/cover no-repeat;filter:grayscale(1) contrast(1.08);z-index:-3}
 .about-page-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,21,21,.98) 0%,rgba(21,21,21,.82) 44%,rgba(21,21,21,.28) 100%),linear-gradient(0deg,rgba(21,21,21,.42),transparent 50%);z-index:-2}
 .about-page-hero-line{position:absolute;top:-12%;height:125%;width:1px;background:linear-gradient(180deg,transparent,var(--gold) 25%,var(--gold) 75%,transparent);transform:skew(-22deg);opacity:.85}
 .about-page-hero-line-left{left:47%}

@@ -1,6 +1,6 @@
 .service-page{background:var(--black)}
 .service-hero{height:620px;position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center}
-.service-hero-image{position:absolute;inset:0;background:url('assets/works-photo.png') 68% center/cover no-repeat;filter:grayscale(1) contrast(1.08);z-index:-3}
+.service-hero-image{position:absolute;inset:0;background:url('assets/service-hero.png') 68% center/cover no-repeat;filter:grayscale(1) contrast(1.08);z-index:-3}
 .service-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,21,21,.98) 0%,rgba(21,21,21,.82) 42%,rgba(21,21,21,.3) 100%),linear-gradient(0deg,rgba(21,21,21,.4),transparent 50%);z-index:-2}
 .service-hero-line{position:absolute;top:-12%;height:125%;width:1px;background:linear-gradient(180deg,transparent,var(--gold) 25%,var(--gold) 75%,transparent);transform:skew(-22deg);opacity:.85}
 .service-hero-line-left{left:47%}.service-hero-line-right{right:15%}
