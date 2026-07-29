@@ -3,8 +3,11 @@ declare(strict_types=1);
 
 mb_language('Japanese');
 mb_internal_encoding('UTF-8');
+date_default_timezone_set('Asia/Tokyo');
 
+// Notification destination and server-side sender have separate roles.
 const RECIPIENT_EMAIL = 'kunygtr0306@gmail.com';
+const SENDER_EMAIL = 'noreply@xs417903.xsrv.jp';
 
 function redirect_to(string $location): void
 {
@@ -100,11 +103,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL) || preg_match('/[\r\n]/', $email)
     render_error('メールアドレスの形式を確認してください。');
 }
 
-$host = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
-$host = preg_replace('/:\d+$/', '', $host) ?? '';
-$host = preg_replace('/^www\./', '', $host) ?? '';
-$fromDomain = preg_match('/^[a-z0-9.-]+\.[a-z]{2,}$/i', $host) ? $host : 'localhost.localdomain';
-$fromEmail = 'noreply@' . $fromDomain;
+$fromEmail = SENDER_EMAIL;
 
 $labels = [];
 if ($formType === 'contact') {
