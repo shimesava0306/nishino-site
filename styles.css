@@ -196,6 +196,10 @@ body{animation:site-soft-in 1.15s ease both}
 .contact-method-card:hover .sales-warning{color:#ff8a8a!important}
 .contact-copy>.contact-actions~small{display:block;font-size:11px;line-height:1.65;letter-spacing:.04em}
 .contact-copy>.contact-actions+small{margin-top:10px}
+.contact .contact-button{background:var(--black);color:#fff}
+.contact .contact-button:hover{background:#fff;color:var(--black)}
+.contact .contact-button img{filter:brightness(0) invert(1);transition:filter .25s ease}
+.contact .contact-button:hover img{filter:brightness(0)}
 
 @media (max-width:760px){
   .reveal{
