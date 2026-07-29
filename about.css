@@ -1,0 +1,132 @@
+.about-page{background:var(--black)}
+.about-page .is-current{color:var(--gold)}
+
+.about-page-hero{height:620px;position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center}
+.about-page-hero-image{position:absolute;inset:0;background:url('assets/worker.png') 68% center/cover no-repeat;filter:grayscale(1) contrast(1.08);z-index:-3}
+.about-page-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,21,21,.98) 0%,rgba(21,21,21,.82) 44%,rgba(21,21,21,.28) 100%),linear-gradient(0deg,rgba(21,21,21,.42),transparent 50%);z-index:-2}
+.about-page-hero-line{position:absolute;top:-12%;height:125%;width:1px;background:linear-gradient(180deg,transparent,var(--gold) 25%,var(--gold) 75%,transparent);transform:skew(-22deg);opacity:.85}
+.about-page-hero-line-left{left:47%}
+.about-page-hero-line-right{right:15%}
+.about-page-hero-inner{position:relative;padding-left:9%;padding-top:15px}
+.about-page-hero .hero-eyebrow{margin-bottom:16px}
+.about-page-hero h1{font-family:var(--serif);font-size:clamp(56px,7vw,106px);font-weight:700;letter-spacing:.16em;line-height:1.1;margin:0 0 22px;text-shadow:0 4px 12px rgba(0,0,0,.6)}
+.about-page-hero-lead{font-family:var(--serif);font-size:clamp(24px,2.3vw,36px);line-height:1.55;letter-spacing:.12em;margin:0 0 20px}
+.about-page-hero-copy{font-family:var(--serif);font-size:14px;line-height:2;letter-spacing:.08em;margin:0;color:#ddd}
+
+.about-section-heading .eyebrow{margin-bottom:6px}
+.about-section-heading h2{font-family:var(--serif);font-size:46px;letter-spacing:.15em;margin:0}
+.about-section-heading-center{text-align:center}
+
+.about-philosophy{position:relative;overflow:hidden;padding:94px 0 112px}
+.about-philosophy>.section-number{right:5%;top:20px}
+.about-philosophy .about-section-heading{max-width:1220px;margin:0 auto;padding-left:38px}
+.philosophy-content{max-width:1220px;margin:64px auto 0;display:grid;grid-template-columns:minmax(0,52%) minmax(0,42%);gap:6%;align-items:center}
+.philosophy-copy{position:relative;padding-left:38px}
+.philosophy-mark{position:absolute;left:-18px;top:-82px;font-family:Georgia,serif;font-size:150px;line-height:1;color:var(--gold);opacity:.22}
+.philosophy-copy h3{position:relative;font-family:var(--serif);font-size:clamp(32px,3.2vw,52px);line-height:1.55;letter-spacing:.1em;white-space:nowrap;margin:0 0 28px}
+.philosophy-copy h3 em{font-style:normal;color:var(--gold)}
+.philosophy-copy p{font-family:var(--serif);font-size:clamp(13px,1.4vw,15px);line-height:2.15;letter-spacing:.08em;white-space:nowrap;margin:0}
+.philosophy-photo{height:390px;position:relative;overflow:hidden;clip-path:polygon(10% 0,100% 0,90% 100%,0 100%);margin:0;background:var(--black)}
+.philosophy-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15)}
+.philosophy-photo:after{content:"";position:absolute;inset:14px;border:1px solid rgba(202,149,34,.72)}
+.philosophy-photo figcaption{position:absolute;left:42px;bottom:26px;z-index:1;color:#fff;font:10px var(--mono);letter-spacing:.16em;text-shadow:0 2px 5px #000}
+
+.president-message{position:relative;overflow:hidden;padding:106px 0}
+.president-message>.section-number{left:4%;top:22px}
+.president-message-inner{display:grid;grid-template-columns:42% 1fr;gap:8%;align-items:center}
+.president-photo{height:700px;position:relative;margin:0;overflow:hidden}
+.president-photo img{width:100%;height:100%;object-fit:contain;object-position:center}
+.president-photo:after{content:"";position:absolute;inset:40px 10% 28px;border:1px solid rgba(202,149,34,.5);clip-path:polygon(19% 0,100% 0,81% 100%,0 100%)}
+.president-photo figcaption{position:absolute;right:9%;bottom:8px;font:10px var(--mono);letter-spacing:.2em;color:var(--gold)}
+.president-copy{position:relative;z-index:1;max-width:700px}
+.president-copy h2{font-family:var(--serif);font-size:46px;letter-spacing:.15em;margin:0 0 40px}
+.president-text p{font-family:var(--serif);font-size:14px;line-height:2.15;letter-spacing:.08em;margin:0 0 18px}
+.president-name{display:flex;justify-content:flex-end;align-items:baseline;gap:18px;margin:36px 0 0;font-family:var(--serif)}
+.president-name span{font-size:12px;letter-spacing:.12em}
+.president-name strong{font-size:24px;letter-spacing:.2em;font-weight:500}
+
+.company-profile{position:relative;overflow:hidden;padding:96px 0 82px}
+.company-profile>.section-number{right:5%;top:10px}
+.company-table{max-width:1060px;margin:60px auto 0;border-top:1px solid rgba(202,149,34,.65)}
+.company-table dl{margin:0}
+.company-table dl>div{display:grid;grid-template-columns:250px 1fr;border-bottom:1px solid rgba(21,21,21,.2)}
+.company-table dt,.company-table dd{margin:0;padding:22px 30px;font-size:14px;line-height:1.9;letter-spacing:.08em}
+.company-table dt{display:flex;align-items:center;font-family:var(--serif);font-weight:700;background:rgba(202,149,34,.1);border-right:1px solid rgba(21,21,21,.16)}
+.company-table dd a{display:inline-block;border-bottom:1px solid var(--gold)}
+.company-table dd small{display:block;font-size:11px;color:#6c6c6c}
+
+.company-map{position:relative;overflow:hidden;padding:74px 0 112px}
+.company-map>.section-number{left:4%;top:20px}
+.map-grid{max-width:1220px;margin:60px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+.map-card{background:#fff;border:1px solid rgba(202,149,34,.42)}
+.map-frame{height:340px;overflow:hidden;filter:grayscale(1) contrast(1.05)}
+.map-frame iframe{display:block;width:100%;height:100%;border:0}
+.map-card-copy{position:relative;padding:26px 30px 30px}
+.map-label{font:10px var(--mono);letter-spacing:.18em;color:var(--gold);margin:0 0 8px}
+.map-card h3{font-family:var(--serif);font-size:25px;letter-spacing:.12em;margin:0 0 13px}
+.map-card address{font-style:normal;font-size:13px;line-height:1.8;letter-spacing:.06em;margin:0}
+.map-card-copy>a{position:absolute;right:30px;bottom:31px;padding-bottom:4px;border-bottom:1px solid var(--gold);font:10px var(--mono);letter-spacing:.12em;transition:color .25s ease}
+.map-card-copy>a:hover{color:var(--gold)}
+
+@media (max-width:1100px){
+  .about-philosophy .about-section-heading{padding-left:18px}
+  .philosophy-content{grid-template-columns:minmax(0,54%) minmax(0,41%);gap:5%}
+  .philosophy-copy{padding-left:18px}
+  .president-message-inner{grid-template-columns:40% 1fr;gap:5%}
+  .president-photo{height:610px}
+  .president-text p{font-size:12px}
+}
+
+@media (max-width:760px){
+  .about-page-hero{height:535px;align-items:flex-start}
+  .about-page-hero-image{background-position:63% center}
+  .about-page-hero-shade{background:linear-gradient(90deg,rgba(21,21,21,.94),rgba(21,21,21,.44)),linear-gradient(0deg,rgba(21,21,21,.72),transparent)}
+  .about-page-hero-line-left{left:72%}
+  .about-page-hero-line-right{right:6%}
+  .about-page-hero-inner{padding:114px 20px 0}
+  .about-page-hero .hero-eyebrow{font-size:9px}
+  .about-page-hero h1{font-size:clamp(42px,13vw,66px);letter-spacing:.1em}
+  .about-page-hero-lead{font-size:22px}
+  .about-page-hero-copy{font-size:11px;line-height:1.9}
+  .about-page-hero .scroll-cue{display:flex;left:auto;right:25px;bottom:25px}
+
+  .about-section-heading h2{font-size:30px}
+  .about-philosophy{padding:62px 0 72px}
+  .about-philosophy .about-section-heading{padding-left:0}
+  .about-philosophy>.section-number,.company-profile>.section-number,.company-map>.section-number{font-size:140px}
+  .philosophy-content{display:flex;flex-direction:column;gap:38px;margin-top:48px}
+  .philosophy-copy{padding-left:8px}
+  .philosophy-mark{left:-10px;top:-62px;font-size:110px}
+  .philosophy-copy h3{font-size:27px;line-height:1.6;letter-spacing:.07em;white-space:normal;margin-bottom:20px}
+  .philosophy-copy p{font-size:11px;line-height:2;letter-spacing:.05em;white-space:normal}
+  .philosophy-copy p br{display:none}
+  .philosophy-photo{width:calc(100% + 20px);height:245px;margin-left:-10px}
+  .philosophy-photo figcaption{left:27px;bottom:20px;font-size:8px}
+
+  .president-message{padding:72px 0 78px}
+  .president-message>.section-number{font-size:140px;top:8px;left:-2%}
+  .president-message-inner{display:flex;flex-direction:column;gap:40px}
+  .president-photo{width:100%;height:360px}
+  .president-photo:after{inset:20px 12% 18px}
+  .president-copy h2{font-size:30px;margin-bottom:28px}
+  .president-text p{font-size:11px;line-height:2;letter-spacing:.04em;margin-bottom:16px}
+  .president-name{gap:12px;margin-top:28px}
+  .president-name span{font-size:10px}
+  .president-name strong{font-size:20px}
+
+  .company-profile{padding:66px 0 56px}
+  .company-table{margin-top:42px}
+  .company-table dl>div{display:block}
+  .company-table dt,.company-table dd{padding:12px 15px}
+  .company-table dt{border-right:0;font-size:11px}
+  .company-table dd{font-size:12px}
+  .company-table dd small{font-size:9px}
+
+  .company-map{padding:50px 0 76px}
+  .map-grid{grid-template-columns:1fr;gap:28px;margin-top:42px}
+  .map-frame{height:240px}
+  .map-card-copy{padding:22px}
+  .map-card h3{font-size:22px}
+  .map-card address{font-size:11px}
+  .map-card-copy>a{position:static;display:inline-block;margin-top:18px;font-size:9px}
+}
