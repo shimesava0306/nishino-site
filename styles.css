@@ -192,6 +192,10 @@ body{animation:site-soft-in 1.15s ease both}
 /* Keep the TOP contact copy aligned without awkward line breaks. */
 .contact-copy>p.contact-lead{max-width:760px}
 .contact-copy>p.contact-lead span{display:block;white-space:nowrap}
+.sales-warning{color:#b11226!important;font-weight:700}
+.contact-method-card:hover .sales-warning{color:#ff8a8a!important}
+.contact-copy>.contact-actions~small{display:block;font-size:11px;line-height:1.65;letter-spacing:.04em}
+.contact-copy>.contact-actions+small{margin-top:10px}
 
 @media (max-width:760px){
   .reveal{
@@ -204,6 +208,7 @@ body{animation:site-soft-in 1.15s ease both}
     line-height:1.85;
     letter-spacing:0;
   }
+  .contact-copy>.contact-actions~small{font-size:9px}
 }
 
 @media (prefers-reduced-motion:reduce){
