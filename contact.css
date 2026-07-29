@@ -2,7 +2,7 @@
 .contact-page .nav-contact.is-current{box-shadow:inset 0 0 0 2px rgba(255,255,255,.28)}
 
 .contact-hero{height:620px;position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center}
-.contact-hero-bg{position:absolute;inset:0;background:url('assets/hero-bg.png') center/cover no-repeat;filter:grayscale(.55) contrast(1.05);z-index:-4}
+.contact-hero-bg{position:absolute;inset:0;background:url('assets/hero-bg.webp') center/cover no-repeat;filter:grayscale(.55) contrast(1.05);z-index:-4}
 .contact-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,21,21,.98),rgba(21,21,21,.83) 47%,rgba(21,21,21,.35)),linear-gradient(0deg,rgba(21,21,21,.45),transparent 50%);z-index:-3}
 .contact-hero-dog{position:absolute;right:-2%;bottom:-25%;height:115%;width:auto;max-width:none;z-index:-1}
 .contact-hero-inner{position:relative;padding-left:9%;padding-top:15px}
