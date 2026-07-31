@@ -100,6 +100,17 @@ html{scroll-padding-top:112px}
   .hero-content{left:-24px}
 }
 
+/* Keep the PC hero copy slightly to the left of the header ABOUT item. */
+@media (min-width:1101px) and (max-width:1600px){
+  .hero-content{left:calc(50vw - 780px)}
+}
+@media (min-width:1601px) and (max-width:1680px){
+  .hero-content{left:20px}
+}
+@media (min-width:1681px){
+  .hero-content{left:calc(860px - 50vw)}
+}
+
 /* Navigation, menu trigger and scroll feedback */
 .scroll-progress{position:fixed;top:0;left:0;z-index:200;width:100%;height:3px;background:rgba(202,149,34,.18);pointer-events:none}
 .scroll-progress span{display:block;width:100%;height:100%;background:linear-gradient(90deg,#e1aa32,#fff2a6,#dea313);transform:scaleX(0);transform-origin:left center;transition:transform .12s linear;box-shadow:0 0 10px rgba(255,225,133,.7)}
@@ -248,4 +259,26 @@ body{animation:site-soft-in 1.15s ease both}
   .contact-copy>p.contact-lead span{white-space:normal;text-wrap:balance}
   .contact-copy>p.contact-sales-warning{font-size:12px;line-height:1.7;letter-spacing:0;text-wrap:balance;line-break:strict}
   .contact-heading-tail{display:block}
+}
+
+/* iPhone SE and other short mobile viewports: keep the full hero copy above browser UI. */
+@media (max-width:760px) and (max-height:700px){
+  .hero-content{padding-top:68px}
+  .hero-lead{line-height:1.7;margin-bottom:14px}
+  .hero-actions .button{height:36px}
+}
+
+/* Make the mobile hero buttons easier to tap. */
+@media (max-width:760px){
+  .hero-actions{gap:16px}
+  .hero-actions .button{
+    min-width:156px;
+    height:44px;
+    padding:0 14px;
+    font-size:11px;
+  }
+}
+@media (max-width:760px) and (max-height:700px){
+  .hero-actions{gap:16px}
+  .hero-actions .button{min-width:152px;height:40px}
 }

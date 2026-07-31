@@ -12,6 +12,17 @@
 .contact-hero-copy{font-family:var(--serif);font-size:14px;line-height:2;letter-spacing:.08em;margin:0;color:#ddd}
 .contact-hero .scroll-cue{left:max(28px,calc((100% - 1600px)/2 + 40px));bottom:36px}
 
+@media (min-width:761px){
+  .contact-hero .scroll-cue{
+    left:50%;
+    animation:contact-scroll-cue-float 2.2s ease-in-out infinite;
+  }
+}
+@keyframes contact-scroll-cue-float{
+  0%,100%{transform:translateX(-50%) translateY(0);opacity:.75}
+  50%{transform:translateX(-50%) translateY(8px);opacity:1}
+}
+
 .contact-guide{position:relative;overflow:hidden;padding:94px 0 104px}
 .contact-guide>.section-number{right:5%;top:18px}
 .contact-section-heading{text-align:center}
