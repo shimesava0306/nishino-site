@@ -84,16 +84,3 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 updateScrollProgress();
-
-const worksMoreButton = document.querySelector('.works-more-button');
-const hiddenWorks = document.querySelectorAll('.works-card.is-more');
-
-worksMoreButton?.addEventListener('click', () => {
-  const expanded = worksMoreButton.getAttribute('aria-expanded') === 'true';
-  hiddenWorks.forEach((card) => card.classList.toggle('is-visible', !expanded));
-  worksMoreButton.setAttribute('aria-expanded', String(!expanded));
-  worksMoreButton.childNodes[0].textContent = expanded ? 'VIEW MORE' : 'CLOSE';
-  if (expanded) {
-    document.querySelector('#works-list')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-});
