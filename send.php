@@ -6,8 +6,8 @@ mb_internal_encoding('UTF-8');
 date_default_timezone_set('Asia/Tokyo');
 
 // Notification destination and server-side sender have separate roles.
-const RECIPIENT_EMAIL = 'kyo19910402@icloud.com';
-const SENDER_EMAIL = 'noreply@xs417903.xsrv.jp';
+const RECIPIENT_EMAIL = 'kunygtr0306@gmail.com';
+const SENDER_EMAIL = 'contact@nishino-kogyo.com';
 
 function redirect_to(string $location): void
 {

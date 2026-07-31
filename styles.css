@@ -97,6 +97,7 @@ html{scroll-padding-top:112px}
 
 @media (min-width:761px){
   .nav-contact{font-size:20px!important}
+  .hero-content{left:-24px}
 }
 
 /* Navigation, menu trigger and scroll feedback */
