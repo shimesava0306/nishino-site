@@ -46,3 +46,22 @@
   .service-message-inner>p:not(.eyebrow){font-size:13px;line-height:1.95;text-wrap:balance;line-break:strict}
   .service-detail-copy li{font-size:12px;line-height:1.6}
 }
+
+@media (min-width:761px) and (max-width:1024px){
+  .service-hero-inner{padding-left:5%}
+  .service-hero h1{font-size:clamp(64px,9vw,86px)}
+  .service-hero-shade{background:linear-gradient(90deg,rgba(21,21,21,.99),rgba(21,21,21,.88) 50%,rgba(21,21,21,.38)),linear-gradient(0deg,rgba(21,21,21,.46),transparent 52%)}
+  .service-hero-copy{max-width:560px;font-size:14px}
+  .service-hero-copy,.service-detail-copy>p:not(.service-detail-kicker),.service-message-inner>p:not(.eyebrow){text-wrap:pretty;line-break:strict;word-break:normal}
+  .service-intro{padding:78px 0 90px}
+  .service-list{max-width:820px;gap:72px}
+  .service-detail,.service-detail-reverse{grid-template-columns:1fr;gap:28px;min-height:0}
+  .service-detail-reverse .service-detail-media,.service-detail-reverse .service-detail-copy{grid-column:auto;grid-row:auto}
+  .service-detail-number{left:0;top:-24px}
+  .service-detail-media{height:390px}
+  .service-detail-copy{padding:0 24px}
+  .service-detail-copy h3{font-size:34px}
+  .service-detail-copy>p:not(.service-detail-kicker){max-width:680px;font-size:14px}
+  .service-message-inner{padding-left:7%}
+  .service-message-inner>p:not(.eyebrow){max-width:600px}
+}

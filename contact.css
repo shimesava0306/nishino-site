@@ -123,3 +123,21 @@
   .contact-form-agree,
   .contact-form-note{font-size:12px;line-height:1.7}
 }
+
+@media (min-width:761px) and (max-width:1024px){
+  .contact-hero-inner{padding-left:5%}
+  .contact-hero h1{font-size:clamp(58px,8.5vw,80px)}
+  .contact-hero-shade{background:linear-gradient(90deg,rgba(21,21,21,.99),rgba(21,21,21,.9) 50%,rgba(21,21,21,.46)),linear-gradient(0deg,rgba(21,21,21,.5),transparent 52%)}
+  .contact-hero-copy{max-width:520px;font-size:14px}
+  .contact-hero-copy,.contact-section-heading>p:last-child,.contact-entry-copy>p:not(.eyebrow),.contact-method-card small,.contact-sales-note{text-wrap:pretty;line-break:strict;word-break:normal}
+  .contact-hero-dog{right:-18%;height:94%;bottom:-12%}
+  .contact-guide{padding:78px 0 88px}
+  .contact-methods{gap:24px}
+  .contact-method-card{min-height:230px;padding:32px 20px}
+  .contact-method-card strong{font-size:22px}
+  .contact-entry{padding:52px 0 58px}
+  .contact-entry-inner{grid-template-columns:1fr;gap:34px}
+  .contact-entry-copy{width:min(100%,760px);margin:0 auto}
+  .contact-entry-copy>p:not(.eyebrow){max-width:620px}
+  .contact-page-form{width:min(100%,760px);margin:0 auto;padding:28px 32px}
+}

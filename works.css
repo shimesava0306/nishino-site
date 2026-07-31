@@ -37,3 +37,14 @@
   .works-copy-tail{display:block;white-space:nowrap}
   .works-section-heading>p:last-child{font-size:13px;line-height:1.9}
 }
+
+@media (min-width:761px) and (max-width:1024px){
+  .works-page-hero-inner{padding-left:5%}
+  .works-page-hero h1{font-size:clamp(64px,9vw,86px)}
+  .works-page-hero-shade{background:linear-gradient(90deg,rgba(21,21,21,.99),rgba(21,21,21,.88) 50%,rgba(21,21,21,.38)),linear-gradient(0deg,rgba(21,21,21,.46),transparent 52%)}
+  .works-page-hero-copy{max-width:520px;font-size:14px}
+  .works-page-hero-copy,.works-section-heading>p:last-child,.works-coming-soon p{text-wrap:pretty;line-break:strict;word-break:normal}
+  .works-list{padding:78px 0 92px}
+  .works-coming-soon{max-width:760px;margin-top:52px}
+  .works-cta-inner{padding-left:7%}
+}

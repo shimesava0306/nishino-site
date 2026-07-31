@@ -142,3 +142,26 @@
   .company-table dd small,
   .map-card address{font-size:12px;line-height:1.9}
 }
+
+@media (min-width:761px) and (max-width:1024px){
+  .about-page-hero-inner{padding-left:5%}
+  .about-page-hero h1{font-size:clamp(64px,9vw,86px)}
+  .about-page-hero-shade{background:linear-gradient(90deg,rgba(21,21,21,.99),rgba(21,21,21,.88) 52%,rgba(21,21,21,.38)),linear-gradient(0deg,rgba(21,21,21,.48),transparent 52%)}
+  .about-page-hero-copy{max-width:520px;font-size:14px}
+  .about-page-hero-copy,.philosophy-copy p,.president-text p{text-wrap:pretty;line-break:strict;word-break:normal}
+  .about-philosophy{padding:78px 0 88px}
+  .about-philosophy .about-section-heading{padding-left:0}
+  .philosophy-content{grid-template-columns:1fr;gap:42px;margin-top:52px}
+  .philosophy-copy{padding:0 20px}
+  .philosophy-copy h3,.philosophy-copy p{white-space:normal}
+  .philosophy-copy p{max-width:650px}
+  .philosophy-photo{width:min(100%,760px);height:420px;margin:0 auto}
+  .president-message{padding:82px 0}
+  .president-message-inner{grid-template-columns:1fr;gap:42px}
+  .president-photo{width:min(100%,540px);height:620px;justify-self:center}
+  .president-copy{max-width:760px;margin:0 auto}
+  .president-text p{max-width:680px;font-size:14px}
+  .company-table dl>div{grid-template-columns:210px 1fr}
+  .map-grid{grid-template-columns:1fr;max-width:760px;gap:32px}
+  .map-frame{height:390px}
+}
